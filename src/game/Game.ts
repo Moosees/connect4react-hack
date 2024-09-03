@@ -40,6 +40,7 @@ export default class Game {
   async run() {
     while (true) {
       const startChoice = await this.#userInterface.paintStart();
+      console.log({ startChoice });
 
       if (startChoice === "quit") return;
       if (startChoice === "start") {
